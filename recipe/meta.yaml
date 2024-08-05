@@ -1,5 +1,5 @@
 {% set pkgname = "pv" %}
-{% set version = "1.8.2" %}
+{% set version = "1.8.12" %}
 {% set sha256 = "9687f9deedb09d0dc00d80c30691f0c91282c0d5d8fa7d6a2a085c8742c2cd7c" %}
 
 package:
@@ -7,8 +7,8 @@ package:
   version: {{ version }}
 
 source:
-  fn: {{ pkgname }}-{{ version }}.tar.bz2
-  url: http://www.ivarch.com/programs/sources/{{ pkgname }}-{{ version }}.tar.bz2
+  fn: {{ pkgname }}-{{ version }}.tar.gz
+  url: http://www.ivarch.com/programs/sources/{{ pkgname }}-{{ version }}.tar.gz
   sha256: {{ sha256 }}
 
 build:
