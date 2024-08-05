@@ -9,3 +9,4 @@ provider:
   linux_ppc64le: default
 build_platform:
   linux_ppc64le: linux_64
+  osx_64: linux_64
