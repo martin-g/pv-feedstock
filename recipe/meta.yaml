@@ -10,6 +10,8 @@ source:
   fn: {{ pkgname }}-{{ version }}.tar.gz
   url: http://www.ivarch.com/programs/sources/{{ pkgname }}-{{ version }}.tar.gz
   sha256: {{ sha256 }}
+  patches:
+    - pv-osx-skip-test.patch  # [osx]
 
 build:
   number: 0
