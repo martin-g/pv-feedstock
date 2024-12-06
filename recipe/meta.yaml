@@ -1,5 +1,5 @@
 {% set pkgname = "pv" %}
-{% set version = "1.8.12" %}
+{% set version = "1.9.7" %}
 
 package:
   name: {{ pkgname }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: http://www.ivarch.com/programs/sources/{{ pkgname }}-{{ version }}.tar.gz
-  sha256: 9687f9deedb09d0dc00d80c30691f0c91282c0d5d8fa7d6a2a085c8742c2cd7c
+  sha256: 6976a789ee1bbcfdc47732015b60589c1d0408892252dd7cbb44f43363a2f33a
   patches:
     - pv-osx-skip-test.patch  # [osx]
 
