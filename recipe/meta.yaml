@@ -1,15 +1,13 @@
 {% set pkgname = "pv" %}
 {% set version = "1.8.12" %}
-{% set sha256 = "9687f9deedb09d0dc00d80c30691f0c91282c0d5d8fa7d6a2a085c8742c2cd7c" %}
 
 package:
   name: {{ pkgname }}
   version: {{ version }}
 
 source:
-  fn: {{ pkgname }}-{{ version }}.tar.gz
   url: http://www.ivarch.com/programs/sources/{{ pkgname }}-{{ version }}.tar.gz
-  sha256: {{ sha256 }}
+  sha256: 9687f9deedb09d0dc00d80c30691f0c91282c0d5d8fa7d6a2a085c8742c2cd7c
   patches:
     - pv-osx-skip-test.patch  # [osx]
 
@@ -21,7 +19,7 @@ requirements:
   build:
     - make
     - {{ compiler('c') }}
-    - {{ stdlib("c") }}
+    - {{ stdlib('c') }}
 
 test:
   commands:
@@ -34,4 +32,5 @@ about:
 
 extra:
   recipe-maintainers:
+    - martin-g
     - shahin
