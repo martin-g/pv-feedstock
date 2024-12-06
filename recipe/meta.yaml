@@ -8,8 +8,8 @@ package:
 source:
   url: http://www.ivarch.com/programs/sources/{{ pkgname }}-{{ version }}.tar.gz
   sha256: 6976a789ee1bbcfdc47732015b60589c1d0408892252dd7cbb44f43363a2f33a
-  # patches:
-    #- pv-osx-skip-test.patch  # [osx]
+  patches:
+    - pv-osx-skip-test.patch  # [osx]
 
 build:
   number: 0
